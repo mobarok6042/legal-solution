@@ -1,11 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        major: '#B68C5A',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="icon" type="image/x-icon" href="images/fab.png" />
+    <style>
+        .poppins {
+            font-family: poppins;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <header class="poppins px-24">
+        <nav>
+            <div class="navbar bg-base-100  pb-12">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Home</a></li>
+                            <li>
+                                <a>Services</a>
+                                <ul class="p-2">
+                                    <li><a>Licences</a></li>
+                                    <li><a>Income tax</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a>Cases</a>
+                                <ul class="p-2">
+                                    <li><a>Murder</a></li>
+                                    <li><a>Robbery</a></li>
+                                    <li><a>Others..</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a>Blog</a>
+                                <ul class="p-2">
+                                    <li><a>Laws</a></li>
+                                    <li><a>Constitution</a></li>
+                                    <li><a>Others..</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a>About us</a>
+                                <ul class="p-2">
+                                    <li><a>Introduction</a></li>
+                                    <li><a>Contacts</a></li>
+                                    <li><a>Others..</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-xl"><img src="images/logo2.png" alt=""></a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li>
+                            <details>
+                                <summary>services</summary>
+                                <ul class="p-2">
+                                    <li><a>Licences</a></li>
+                                    <li><a>Income tax</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Cases</summary>
+                                <ul class="p-2">
+                                    <li><a>Murder</a></li>
+                                    <li><a>Robbery</a></li>
+                                    <li><a>Others..</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Blog</summary>
+                                <ul class="p-2">
+                                    <li><a>Laws</a></li>
+                                    <li><a>Constitution</a></li>
+                                    <li><a>Others..</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>About us</summary>
+                                <ul class="p-2">
+                                    <li><a>Introduction</a></li>
+                                    <li><a>Contacts</a></li>
+                                    <li><a>Others..</a></li>
+                                </ul>
+                            </details>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn bg-major text-white font-extrabold">Free Consultation</a>
+                </div>
+            </div>
+        </nav>
+        <div class="hero "
+            style="background-image: url(images/banner.png);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-neutral-content text-center flex flex-column">
+                <div class="max-w-md">
+                    <h1 class="mb-5 text-5xl font-bold">We Provide Effective Legal Solution </h1>
+                    <p class="mb-5">
+                        We are always helpful to our clients and try to support them in all perspectives.Contact with us for true information and confident approach.
+                    </p>
+                    <input type="text" placeholder="Enter your services" class="w-64 h-12 border-none rounded-md text-center text-black">
+                    <button class="btn bg-major text-white font-extrabold border-none">Search</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
+
 </html>
