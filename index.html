@@ -10,6 +10,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -27,15 +31,18 @@
     <link rel="icon" type="image/x-icon" href="images/fab.png" />
     <style>
         .poppins {
-            font-family: poppins;
+            font-family: Poppins;
+        }
+        .eb{
+            font-family: EB-Garamond;
         }
     </style>
 </head>
 
 <body>
-    <header class="poppins px-24">
+    <header class="poppins px-4 lg:px-24">
         <nav>
-            <div class="navbar bg-base-100  pb-12">
+            <div class="navbar bg-base-100  pb-6">
                 <div class="navbar-start">
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -134,23 +141,120 @@
                 </div>
             </div>
         </nav>
-        <div class="hero "
-            style="background-image: url(images/banner.png);">
+        <div class="hero " style="background-image: url(images/banner.png);">
             <div class="hero-overlay bg-opacity-60"></div>
             <div class="hero-content text-neutral-content text-center flex flex-column">
                 <div class="max-w-md">
                     <h1 class="mb-5 text-5xl font-bold">We Provide Effective Legal Solution </h1>
                     <p class="mb-5">
-                        We are always helpful to our clients and try to support them in all perspectives.Contact with us for true information and confident approach.
+                        We are always helpful to our clients and try to support them in all perspectives.Contact with us
+                        for true information and confident approach.
                     </p>
-                    <input type="text" placeholder="Enter your services" class="w-64 h-12 border-none rounded-md text-center text-black">
+                    <input type="text" placeholder="Enter your services"
+                        class="w-64 h-12 border-none rounded-md text-center text-black">
                     <button class="btn bg-major text-white font-extrabold border-none">Search</button>
                 </div>
             </div>
         </div>
     </header>
     <main>
+        <!--legal practice area starts-->
+        <div class="grid column justify-center px-24 py-14">
+            <h2 class="text-center eb font-extrabold text-4xl pb-8">The Legal Practice Area</h2>
+            <p class="text-center poppins font-normal text-base">We are now available for intern student practice under
+                reputed and experienced lawyers. <br> Enter your e-mail and subscribe in our news-letter section to be
+                up-to-date.</p>
+        </div>
+        <!--legal practice area end-->
+        <!--service cards start-->
+        <div class="grid grid-cols-1 px-4 lg:grid-cols-3 lg:px-24">
+            <!--card 1-->
+            <div class="card border rounded-none">
+                <figure class="px-10 pt-10">
+                    <img src="images/business.png" alt="Shoes" class="rounded-xl " />
+                </figure>
+                <div class="card-body items-center text-center  pb-14">
+                    <h2 class="card-title eb">Business law</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, deserunt tempore? Sit voluptatum
+                        est ipsa, eveniet numquam eligendi laborum fugit ea molestias, sed, dicta molestiae?</p>
+                    <div class="card-actions">
+                        <button class="bg-major rounded-full w-12 h-12"><img src="images/c r.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <!--card 2-->
+            <div class="card border rounded-none">
+                <figure class="px-10 pt-10">
+                    <img src="images/criminal.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center pb-14">
+                    <h2 class="card-title eb">Criminal law</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, deserunt tempore? Sit voluptatum
+                        est ipsa, eveniet numquam eligendi laborum fugit ea molestias, sed, dicta molestiae?</p>
+                    <div class="card-actions">
+                        <button class="bg-major rounded-full w-12 h-12"><img src="images/c r.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <!--card 3-->
+            <div class="card border rounded-none">
+                <figure class="px-10 pt-10">
+                    <img src="images/child.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center pb-14">
+                    <h2 class="card-title eb">Child support</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, deserunt tempore? Sit voluptatum
+                        est ipsa, eveniet numquam eligendi laborum fugit ea molestias, sed, dicta molestiae?</p>
+                    <div class="card-actions">
+                        <button class="bg-major rounded-full w-12 h-12"><img src="images/c r.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <!--card 4-->
+            <div class="card border rounded-none">
+                <figure class="px-10 pt-10">
+                    <img src="images/education.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center  pb-14">
+                    <h2 class="card-title eb">Education law</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, deserunt tempore? Sit voluptatum
+                        est ipsa, eveniet numquam eligendi laborum fugit ea molestias, sed, dicta molestiae?</p>
+                    <div class="card-actions">
+                        <button class="bg-major rounded-full w-12 h-12"><img src="images/c r.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <!--card 5-->
+            <div class="card border rounded-none">
+                <figure class="px-10 pt-10">
+                    <img src="images//divorce.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center pb-14">
+                    <h2 class="card-title eb">Divorce law</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, deserunt tempore? Sit voluptatum
+                        est ipsa, eveniet numquam eligendi laborum fugit ea molestias, sed, dicta molestiae?</p>
+                    <div class="card-actions">
+                        <button class="bg-major rounded-full w-12 h-12"><img src="images/c r.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <!--card 6-->
+            <div class="card border rounded-none">
+                <figure class="px-10 pt-10">
+                    <img src="images/tax.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center pb-14">
+                    <h2 class="card-title eb">Tax law</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, deserunt tempore? Sit voluptatum
+                        est ipsa, eveniet numquam eligendi laborum fugit ea molestias, sed, dicta molestiae?</p>
+                    <div class="card-actions">
+                        <button class="bg-major rounded-full w-12 h-12"><img src="images/c r.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
 
+        </div>
+        <!--service cards end-->
     </main>
     <footer>
 
